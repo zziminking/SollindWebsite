@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+#companyReviewWriteTableArea {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 100%;
+}
+
+#companyReviewWriteNameTable{
+	width: 1200px;
+}
+#companyReviewWriteTable{
+	width: 600px;
+	border: #E51B20 solid 3px;
+	border-radius: 8px;
+}
+
+#companyReviewWriteNameTable .cRWName{
+	font-size: 30pt;
+	font-weight: 900;
+	height: 80px;
+	border: #E51B20 solid 3px;
+	border-radius: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#companyReviewWriteTable {
+	margin-top: 20px;
+	border-spacing: 0;
+}
+
+#companyReviewWriteTable .cRWScore{
+	font-size: 20pt;
+	padding: 5px;
+	padding-top: 10px;
+}
+#companyReviewWriteTable .cRWId{
+	font-size: 10pt;
+	padding: 5px;
+}
+#companyReviewWriteTable .cRWTitle{
+	resize:none;
+	width: 80%;
+	height: 15px;
+	outline: none;
+	border: black solid 3px;
+	border-radius: 8px;
+	font-size: 12pt;
+	padding: 10px;
+	font-weight: 900;
+}
+#companyReviewWriteTable .cRWTitleArea{
+	padding: 10px;
+}
+#companyReviewWriteTable .cRWText{
+	resize: none;
+	width: 80%;
+	min-height: 100px;
+	padding: 10px;
+	outline: none;
+	border: black solid 3px;
+	border-radius: 8px;
+	font-size: 15pt;
+}
+#companyReviewWriteTable .cRWTextArea{
+	padding: 10px;
+}
+#companyReviewWriteTable .cRWbuttonTd{
+	padding: 15px;
+}
+#companyReviewWriteTable .cRWbutton{
+	width: 90px;
+	height: 40px;
+	font-size: 15pt;
+	font-weight:900;
+	background-color: #ffffff;
+	border: #E51B20 solid 3px;
+	border-radius: 8px;
+	color: #E51B20;
+	
+}
+#companyReviewWriteTable .cRWbutton:hover{
+	background-color: #E51B20;
+	border: #E51B20 solid 3px;
+	color: #FFFFFF;
+	cursor: pointer;
+}

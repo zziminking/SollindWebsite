@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soldesk.Sollind.board.BoardMapper">
+	<select id="getBoard" parameterType="com.soldesk.Sollind.board.Board" resultType="com.soldesk.Sollind.home.HomeBoard">
+		select *
+		from (
+			select rownum as rn, b_no, b_type, b_title, b_txt, b_m_id, b_date, b_img, b_ddabong
+			from (
+				select *
+				from Board
+				where b_type like '%'||#{b_type}||'%'
+				order by b_date desc
+			)
+		)
+		where rn &gt;= 1 and rn &lt;= 10
+	</select>
+	<select id="getBoardDdabong" parameterType="com.soldesk.Sollind.board.BoardDdabong" resultType="com.soldesk.Sollind.board.BoardDdabong">
+		select * from Board_ddabong where bd_b_no = #{bd_b_no } and bd_m_id = #{bd_m_id }
+	</select>
+	<select id="getBoardDetail" parameterType="com.soldesk.Sollind.board.Board" resultType="com.soldesk.Sollind.board.Board">
+		select * from Board where b_no = #{b_no}
+	</select>
+	<select id="getBoardReply" parameterType="com.soldesk.Sollind.board.Board" resultType="com.soldesk.Sollind.board.BoardReply">
+		select *
+		from (
+			select rownum as rn, br_no, br_txt, br_m_id, br_date, br_b_no
+			from (
+				select *
+				from Board_Reply
+				where br_b_no = #{b_no}
+				order by br_date desc
+			)
+		)
+		where rn &gt;= 1 and rn &lt;= 10
+	</select>
+	<insert id="insertBoard" parameterType="com.soldesk.Sollind.board.Board">
+		insert into Board values(Board_seq.nextval, #{b_type}, #{b_title},#{b_txt}, #{b_m_id}, sysdate,#{b_img},0)
+	</insert>
+	<update id="updateBoard" parameterType="com.soldesk.Sollind.board.Board">
+		update Board set b_title = #{b_title}, b_txt = #{b_txt}, b_img = #{b_img} where b_no = #{b_no}
+	</update>
+	<delete id="deleteBoard" parameterType="com.soldesk.Sollind.board.Board">
+		delete from Board where b_no = #{b_no}
+	</delete>
+	<insert id="insertReply" parameterType="com.soldesk.Sollind.board.BoardReply">
+		insert into Board_Reply values(Board_Reply_seq.nextval, #{br_txt}, #{br_m_id}, sysdate, #{br_b_no})
+	</insert>
+	<update id="updateReply" parameterType="com.soldesk.Sollind.board.BoardReply">
+		update Board_Reply set br_txt = #{br_txt} where br_no = #{br_no}
+	</update>
+	<delete id="deleteReply" parameterType="com.soldesk.Sollind.board.BoardReply">
+		delete from Board_Reply where br_no = #{br_no}
+	</delete>
+</mapper>

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "kn";
+	src: url("KoPubWorld Dotum Bold.ttf");
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "kn";
+}
+#loginTb{
+	margin-top: 50px;
+	width: 1200px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#loginTb input{
+	height: 50px;
+	width: 600px;
+	text-align: center;
+	font-family: "kn";
+	font-size: 14pt;
+	border: black solid 3px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#loginTb button{
+	text-align: center;
+	width: 100px;
+	background-color: #FA7070;
+	border: none;
+	height: 50px;
+	font-size: 15pt;
+	font-family: "kn";
+	font-weight: 900;
+	padding: 3px;
+	line-height: normal;
+	vertical-align: middle;
+	cursor: pointer;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+	border: 1px solid #ebebeb;
+}
+#logo{
+	text-decoration: none;
+	font-family: "kn";
+	color: black;
+	font-size: 20pt;
+}

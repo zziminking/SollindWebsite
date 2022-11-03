@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "kn";
+	src: url("KoPubWorld Dotum Bold.ttf");
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "kn";
+}
+
+img {
+	max-width: 2%;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+#jointable {
+	margin-top: 50px;
+	width: 1200px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#jointable input {
+	height: 50px;
+	width: 600px;
+	text-align: center;
+	font-family: "kn";
+	font-size: 14pt;
+	border: black solid 3px;
+	margin-top: 20px;
+}
+
+#jointable #photo {
+	height: 50px;
+	width: 600px;
+	text-align: center;
+	font-family: "kn";
+	border: none;
+}
+
+#jointable button {
+	text-align: center;
+	width: 100px;
+	background-color: #FA7070;
+	border: none;
+	height: 50px;
+	font-size: 15pt;
+	font-family: "kn";
+	font-weight: 900;
+	padding: 3px;
+	line-height: normal;
+	vertical-align: middle;
+	cursor: pointer;
+}
+#joinbutton button{
+	text-align: center;
+	width: 100px;
+	background-color: #FA7070;
+	border: none;
+	height: 50px;
+	font-size: 15pt;
+	font-family: "kn";
+	font-weight: 900;
+	padding: 3px;
+	line-height: normal;
+	vertical-align: middle;
+	cursor: pointer;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+	border: 1px solid #ebebeb;
+}
+
+#jointable a {
+	text-decoration: none;
+	font-family: "kn";
+	font-size: 15pt;
+	background-color: #FA7070;
+	border: #FA7070 solid 11px;
+	color: black;
+	font-weight: 900;
+	
+}
+
+#filebox label {
+	display: inline-block;
+	padding: .5em .75em;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #FFD1D1;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+	font-family: "kn";
+	font-weight: 900;
+}
+
+#filebox input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+#filebox {
+	margin-top: 20px;
+}
+#logo{
+	text-decoration: none;
+	font-family: "kn";
+	color: black;
+	font-size: 20pt;
+}

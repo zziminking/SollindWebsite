@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@font-face{
+	font-family: "kn";
+	src: url("../KoPubWorld Dotum Bold.ttf");
+}
+@font-face{
+	font-family: "ma";
+	src: url("../font/Maplestory Light.ttf");
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+tr{
+	padding: 0px;
+	margin: 0px;
+}
+td{
+	padding: 0px;
+	margin: 0px;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: #212121;
+}
+#homeTable {
+	width: 100%;
+	font-family: "kn";
+	text-align: center;
+	border-spacing: 0;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+}
+#homeTable #tableTitle{
+	height: 80px;
+	background-color: white;
+	border-bottom: 2px solid #E0E0E0;
+}
+#homeTable #tableTitle #main {
+	width: 1200px;
+	height: 70px;
+	border-spacing: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	font-size: 16pt;
+	font-family: "kn";
+	font-weight: 900;
+}
+#homeTable #tableTitle #main #home{
+	width: 350px;
+}
+#homeTable #tableTitle #main #searchNew{
+	width: 200px;
+}
+#homeTable #tableTitle #main #searchNew #searchMain #searchInput{
+	padding-bottom: 25px;
+}
+#homeTable #tableTitle #main #searchNew #searchMain #searchInput input{
+	width: 180px;
+	height: 34px;
+	margin-left : 150px;
+	border: black solid 2px;
+	border-radius: 20pt;
+	font-family: "kn";
+	padding-left: 40px;
+	font-size: 15pt;
+	position: relative;
+	top: 0px;
+	left: -10px;
+}
+#homeTable #tableTitle #main #searchNew #searchMain #searchInput img{
+	top : 5.5px;
+	left : -45px;
+	max-width: 50%;
+	position : relative;
+	z-index: 1;
+}
+#homeTable #tableTitle #main #searchNew #searchMain #searchInput button{
+	width: 50px;
+	border: none;
+	position: relative;
+	top: 35px;
+	left: 180px;
+}
+#homeTable #tableTitle #main #companyName{
+	width: 250px;
+	border-spacing: 0;
+	font-size: 30pt;
+	font-weight: 900;
+	text-align: left;
+	font-family: "ma";
+}
+#homeTable #tableTitle #main #companyName img{
+	max-width: 20%;
+}
+#homeTable #tableTitle #loginTable{
+	padding-right: 3px;
+	width: 380px;
+}
+#homeTable #tableTitle #loginTable #homeLogin {
+	font-family: "kn";
+	width: 75px;
+	height: 30px;
+	text-decoration: none;
+	font-size: 13pt;
+	padding: 8px;
+	position: relative;
+	margin-left: 0px;
+	color: #FFFFFF;
+	background-color: #DA3238;
+}
+#homeTable #tableTitle #loginTable #homeJoin {
+	font-family: "kn";
+	border : 2px solid #EEEEEE;
+	background-color: transparent;
+	width: 75px;
+	height: 30px;
+	text-decoration: none;
+	font-size: 13pt;
+	padding: 8px;
+	position: relative;
+	margin-left: -40px;
+}
+#homeTable #tableTitle #loginTable .homeLogined{
+	font-family: "kn";
+	border : 2px solid #EEEEEE;
+	background-color: transparent;
+	width: 75px;
+	height: 30px;
+	text-decoration: none;
+	font-size: 13pt;
+	padding: 8px;
+	position: relative;
+	margin-right: -40px;
+}
+#loginTable #homeGoWrite{
+	color: #FFFFFF;
+	background-color: #DA3238;
+	font-size: 13pt;
+	padding: 8px;
+	margin-right: 10px;
+	height: 30px;
+}
+#endInfo {
+	width: 100%;
+	font-family: "kn";
+	text-align: center;
+	border-spacing: 0;
+	margin-top: 160px;
+}
+#endInfo #endTable{
+	height: 80px;
+	border-top: 2px solid #E0E0E0;
+	background-color: black;
+}
+#endInfo #endTable #main {
+	width: 1200px;
+	height: 70px;
+	border-spacing: 0;
+	font-family: "kn";
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	color: #EDEDED;
+}
+#endInfo #endTable #main #infoImg{
+	width: 30%;
+}
+#endInfo #endTable #main #infoName{
+	max-width: 80%;
+}
+#endInfo #endTable #main .endTxt{
+	font-size: 12pt;
+}

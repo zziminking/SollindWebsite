@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soldesk.Sollind.home.HomeMapper">
+	<select id="getBestBoard" resultType="com.soldesk.Sollind.board.Board">
+		select * from BOARD where b_date &gt;= TO_CHAR(SYSDATE-7,'YYYY-MM-DD') order by b_ddabong desc
+	</select>
+	<select id="searchBoard" parameterType="com.soldesk.Sollind.home.Search2" resultType="com.soldesk.Sollind.home.HomeBoard">
+		select *
+		from (
+			select rownum as rn, b_no, b_type, b_title, b_txt, b_m_id, b_date, b_img, b_ddabong
+			from (
+				select *
+				from Board
+				where (UPPER(b_title) like UPPER('%'||#{search}||'%') or UPPER(b_txt) like UPPER('%'||#{search}||'%')) 
+				and b_type like ('%'||#{type}||'%')
+				order by b_date desc
+			)
+		)
+	</select>
+	<select id="searchCompany" parameterType="com.soldesk.Sollind.home.Search2" resultType="com.soldesk.Sollind.company.Company">
+		select * from Company where UPPER(c_name) = UPPER(#{search})
+	</select>
+	<select id="getBoardPart" parameterType="java.lang.String" resultType="com.soldesk.Sollind.home.HomeBoard">
+		select * from Board where b_type = #{type} order by b_date desc
+	</select>
+</mapper>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@font-face{
+	font-family: "ma";
+	src: url("../font/Maplestory Light.ttf");
+}
+
+table{
+	border-spacing: 0px;
+}
+#companyAITitleTable{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	font-size: 30pt;
+	font-family: ma;
+}
+#companyAITableArea{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+#companyAITable{
+	width: 1200px;
+}
+#companyAITable .companyAITd1{
+	height: 80px;
+}
+#companyAITable #companyAIStarScoreTable .companyAITd2{
+	width: 20%;
+	height: 100px;
+}
+#companyAITable .companyAITd2 input{
+	width: 100px;
+}
+#companyAIStarScoreTable{
+	width: 100%;
+	height: 100%;
+}
+#companyAITable .companyAITd1 input, #companyAITable #companyAIStarScoreTable .companyAITd2 input{
+	padding: 5px;
+	font-size: 15pt;
+}
+#companyAITable #companyGrade{
+	width: 50px;
+	font-weight: 900;
+}

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@font-face{
+	font-family: "kn";
+	src: url("../KoPubWorld Dotum Bold.ttf");
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+tr{
+	padding: 0px;
+	margin: 0px;
+}
+td{
+	padding: 0px;
+	margin: 0px;
+}
+#boardType{
+	width: 1200px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border-spacing: 0;
+	font-family: "kn";
+}
+#boardType td{
+	width: 10%;
+	text-align: center;
+	color: #C7C7C7;
+	cursor: pointer;
+}
+#boardType td:hover{
+	color: black;
+	background: #C7C7C7;
+}
+#boardTable{
+	width: 1200px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border-spacing: 0;
+	font-family: "kn";
+}
+#boardTable button{
+	width: 50px;
+	height: 25px;
+	font-family: "kn";
+	font-size: 10pt;
+	background: #fff;
+	border: 2px solid #E0E0E0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#boardTable button:hover{
+	background: #C7C7C7;
+}
+#boardTable .boardTableTd{
+	border-top: solid 2px #E0E0E0;
+}
+#boardTable .boardTableTd .eachBoardTable{
+	width: 600px;
+	height: 230px;
+}
+#boardTable .boardTableTd .eachBoardTable .eachBoardTitle{
+	height: 30%;
+	font-size: 20px;
+	font-weight: 700;
+	vertical-align: top;
+	padding-top: 10px;
+}
+#boardTable .boardTableTd .eachBoardTable .eachBoardImg{
+	width: 130px;
+	padding-left: 20px;
+	padding-right: 20px;
+	table-layout: fixed;
+	max-width: 5%;
+}
+#boardTable .boardTableTd .eachBoardTable .eachBoardImg img{
+	width: 100px;
+	height: 100px;
+}
+#boardTable .boardTableTd .eachBoardTable .eachBoardTxt{
+	font-size: 17px;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+    line-height: 1.2;
+    height: 100px;
+}
+#boardTable .boardTableTd .eachBoardTable .eachBoardDdabong img{
+	max-width: 15px;
+}
+#boardTable .boardTableTd .eachBoardTable .eachBoardDate{
+	padding-right: 20px;
+}

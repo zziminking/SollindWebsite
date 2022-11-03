@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@font-face{
+	font-family: "dhm";
+	src: url("../font/DalseoHealingMedium.ttf");
+}
+#searchText{
+	margin-top : 130px;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "kn";	
+}
+#searchCompany{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+#searchCompany #companyHead{
+	margin-top : 10px;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#searchCompany #companyHead .borderName{
+	font-weight: 800;		
+	font-family: "dhm";
+	font-size: 12pt;
+}
+#searchCompany #companyMain{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border: solid 2px #E0E0E0;
+	margin-bottom: 20px;
+}
+#searchCompany #companyMain #companyLogo img{
+	max-width: 80%;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+#searchCompany #companyMain #companyName{
+	font-weight: 700;
+	width: 90%;
+	height: 100px;	
+}
+#searchCompany #companyMain #companyName img{
+	max-width: 1.3%;	
+}
+#searchCompany #companyMain #companyInfo{
+	height: 200px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FAF7F0;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-family: "dhm";
+	margin-bottom: 20px;
+	font-size: 20pt;
+}
+#searchCompany #companyMain #companyTextTable{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#searchCompany #companyMain #companyText{
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 3px #E0E0E0;
+	height: 50px;
+	border-radius: 5px;
+	font-family: "dhm";
+	font-weight: 600;
+}
+#searchBorder{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+#searchBorder .box{
+	width:400px;
+}
+#searchBorder .test{
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+    line-height: 1.2;
+    height: 3.6em;
+}
+#searchBorder #searchBorderPartTable{
+	width: 100%;
+}
+#searchBorder #searchBorderPartTable .borderName{
+	height: 10px;
+}
+#searchBorder #searchBorderPartTable .borderName .BoardPartCountTable{
+	position : absolute;
+	background-color: white;
+	border: solid 1px black;
+	width: 150px;
+	left: -1500px;
+	color: #C7C7C7;
+	padding-left: 10px;
+}
+
+.borderName .BoardPartCountTable .type0{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type1{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type2{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type3{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type4{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type5{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type6{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type7{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type8{
+	 border-bottom: 10px solid #fff;
+}
+.borderName .BoardPartCountTable .type0:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+.borderName .BoardPartCountTable .type1:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+.borderName .BoardPartCountTable .type2:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+.borderName .BoardPartCountTable .type3:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+.borderName .BoardPartCountTable .type4:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+.borderName .BoardPartCountTable .type5:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+.borderName .BoardPartCountTable .type6:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+.borderName .BoardPartCountTable .type7:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+.borderName .BoardPartCountTable .type8:hover {
+   text-decoration: underline 2px;
+   cursor: pointer;
+ }
+#searchBorder #searchBorderTable1{
+	width: 600px;
+	height: 230px;
+	border: solid 2px #E0E0E0;
+}
+#searchBorder #searchBorderType{
+	height: 10%;
+	padding-top: 10px;
+	font-family: "dhm";
+}
+#searchBorder .searchBorderTitle{
+	height: 15%;
+	font-size: 20px;
+    font-weight: bolder !important;
+}
+#searchBorder .searchBorderImg{
+	padding-left: 20px;
+	padding-right: 20px;
+	table-layout: fixed;
+	width : 100px;
+	max-width: 5%;
+}
+#searchBorder .searchBorderImg img{
+	max-width: 100%;
+}
+#searchBorder .searchBorderTxt{
+	font-size: 17px;
+	height: 50%;
+	font-family: "dhm";
+}
+#searchBorder .searchBorderDdabong img{
+	max-width: 3%;
+}
+#searchBorder #searchBorderDate{
+	padding-right: 20px;
+	font-family: "dhm";
+	width: 30px;
+}
+#searchBorder #searchBorderDate2{
+	padding-right: 20px;
+	font-family: "dhm";
+	width: 70px;
+}
+#searchBorder #searchBorderTd2{
+	border-top: solid 2px #E0E0E0;
+	border-right: solid 2px #E0E0E0;
+}
+#searchBorder #searchBorderTd2 #searchBorderTable2{
+	width: 600px;
+	height: 230px;
+}
+#noSearch{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#noSearch .borderName{
+	height: 10px;
+}
+#noSearch .borderName .BoardPartCountTable{
+	position : absolute;
+	background-color: white;
+	border: solid 1px black;
+	width: 150px;
+	left: -1500px;
+	color: #C7C7C7;
+	padding-left: 10px;
+}
+#noSearch #noSearchImg{
+	max-width: 30%;
+	position: relative;
+	left: 430px;
+}
+
+

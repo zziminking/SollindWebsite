@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+#companyBannerTable{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+	width: 1200px;
+	border-spacing: 0px;;
+	font-size: 30pt;
+	font-family: ma;
+	border: #E51B20 solid 2px;
+	border-radius: 8px;
+}
+.companyBannerTd{
+	padding: 10px;
+}
+.companyBannerTd:hover{
+	cursor: pointer;
+}
+
+#companytable {
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 30px;
+	width: 1200px;
+}
+
+#companytable .companySearchTr{
+	height: 50px;
+}
+
+#companytable .companySearchTr td{
+	padding-bottom: 10px;
+}
+
+#companytable .companySearchTr #companySearchTitle {
+	font-weight: 900;
+	font-size: 25pt;
+	padding-top: 50px;
+}
+#companytable .companySearchTr #companySearchSubTitle {
+	font-size: 15pt;
+	padding-bottom: 50px;
+}
+#companytable .companySearchTr .companySearch{
+	width: 600px;
+	height: 45px;
+	font-size: 12pt;
+	padding-left: 20px;
+	padding-right: 20px;
+	outline: none;
+	border-radius: 30px;
+}
+#companytable .companySearchResultTableTr{
+	height: 30px;
+}
+#companytable .companySearchResultTableAreaTr #companySearchResultTableArea{
+	width: 1200px;
+}
+.companySearchResultTable{
+	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.companySearchResultTableTr:hover{
+	cursor: pointer;
+}
+.companySearchResultTableNameTd{
+	width: 50%;
+	font-size: 15pt;
+	border-right: #E51B20 solid 2px;
+	border-top: #E51B20 solid 2px;
+	border-bottom: #E51B20 solid 2px;
+	padding: 10px;
+}
+.companySearchResultTableLogoTd{
+	width: 30%;
+	border-left: #E51B20 solid 2px;
+	border-top: #E51B20 solid 2px;
+	border-bottom: #E51B20 solid 2px;
+	padding: 10px;
+}
+.companySearchResultTableStar{
+	width:18px;
+	height:18px;
+}
+.companySearchResultTableScoreTd{
+	border-top: #E51B20 solid 2px;
+	border-bottom: #E51B20 solid 2px;
+	padding: 10px;
+}
+.companySearchResultTableLogo{
+	width: 100px;
+	height: 50px;
+}
+#companyInfoTitle{
+	height: 20px;
+	font-size: 20pt;
+	font-weight: 900;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-top: #E51B20 solid 2px;
+}
+.companyInfoTableAreaTr{
+	height: 30px;
+}
+
+#companyInfoTable{
+	width: 95%;
+	height: 90px;
+	border: #d8d8d8 solid 1px;
+	border-radius: 10px;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#companyInfoLogoTd{
+	width: 120px;
+}
+#companyInfoLogoTd img{
+	width: 100px;
+	height: 50px;
+}
+.companyInfoTd{
+	width: 240px;
+	font-weight: 900;
+}
+.starScore{
+	padding-right: 5px;
+}
+.score{
+	padding-left: 5px;
+}
+
+
+
+
+	

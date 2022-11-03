@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.soldesk.Sollind.company.companyMapper">
+	<select id="getCompanyInfo" resultType="com.soldesk.Sollind.company.Company">
+		select *
+		from (
+			select rownum as rn, c_no, c_name, c_score, c_logo
+			from(
+				select *
+				from COMPANY
+				order by c_score desc
+			)
+		)
+		where rn &gt;= 1 and rn &lt;= 9
+	</select>
+	<select id="getCompanyAllInfo" parameterType="com.soldesk.Sollind.company.Company" resultType="com.soldesk.Sollind.company.Company">
+		select * from company where c_no = #{c_no}
+	</select>
+	<select id="getCompanyReview" parameterType="com.soldesk.Sollind.company.Company" resultType="com.soldesk.Sollind.company.CompanyReview">
+		select * from company_review where cr_c_no = #{c_no} order by cr_date desc
+	</select>
+	<select id="getCompanyBoard" parameterType="com.soldesk.Sollind.company.Company" resultType="com.soldesk.Sollind.board.Board">
+		select *
+		from BOARD
+		where b_txt like '%'||#{c_name}||'%' or b_title like '%'||#{c_name}||'%'
+		order by b_date desc
+	</select>
+
+	<insert id="insertCompanyReview" parameterType="com.soldesk.Sollind.company.CompanyReview">
+		insert into company_review values (company_review_seq.nextval, #{cr_score}, #{cr_c_no}, #{cr_title}, #{cr_advantage}, #{cr_weakness}, #{cr_m_id}, sysdate)
+	</insert>
+	
+	<delete id="deleteCompanyReview" parameterType="com.soldesk.Sollind.company.CompanyReview">
+		delete from company_review where cr_no = #{cr_no}
+	</delete>
+	
+	<update id="updateCompanyCount" parameterType="com.soldesk.Sollind.company.Company">
+		update COMPANY
+		set c_count = #{c_count}
+		where c_no = #{c_no}
+	</update>
+	<update id="updateCompanyScore" parameterType="com.soldesk.Sollind.company.Company">
+		update COMPANY
+		set c_score = (
+			select avg(cr_score)
+			from COMPANY_REVIEW
+			where cr_c_no = #{c_no}
+		)
+		where c_no = #{c_no}
+	</update>
+	
+</mapper>

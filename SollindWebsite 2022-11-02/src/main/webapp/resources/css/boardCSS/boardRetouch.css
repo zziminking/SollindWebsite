@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@font-face{
+	font-family: "kn";
+	src: url("../KoPubWorld Dotum Bold.ttf");
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+tr{
+	padding: 0px;
+	margin: 0px;
+}
+td{
+	padding: 0px;
+	margin: 0px;
+}
+#boardRetouchTable{
+	width: 1200px;
+	height: 800px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: white;
+	border-spacing: 0;
+	border: 2px solid #E0E0E0;
+}
+#boardRetouchTable input::placeholder{
+	text-align: center;
+}
+#boardRetouchTable textarea::placeholder{
+	text-align: center;
+	font-size: 15pt;
+}
+#boardRetouchTable #type {
+	height: 60px;
+}
+#boardRetouchTable #type select{
+	width: 40%;
+	font-family: "kn";
+	outline: none;
+	border: 2px solid #E0E0E0;
+	border-radius: 4px;
+	font-size: 12pt;
+}
+#boardRetouchTable #img {
+	height: 60px;
+}
+#boardRetouchTable #img input[type=file]::file-selector-button {
+	font-family: "kn";
+	font-size: 12pt;
+	width: 150px;
+	height: 30px;
+	background: #fff;
+	border: 2px solid #E0E0E0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#boardRetouchTable #title{
+	height: 100px;
+}
+#boardRetouchTable #title input{
+	width: 60%;
+	font-family: "kn";
+	outline: none;
+	border: 2px solid #E0E0E0;
+	border-radius: 4px;
+	font-size: 15pt;
+}
+#boardRetouchTable #txt{
+	height: 500px;
+}
+#boardRetouchTable #txt textarea{
+	resize:none;
+	width: 60%;
+	height: 450px;
+	font-family: "kn";
+	outline: none;
+	border: 2px solid #E0E0E0;
+	border-radius: 4px;
+	font-size: 12pt;
+}
+#boardRetouchTable #retouch{
+	height: 60px;
+}
+#boardRetouchTable #retouch button{
+	width: 150px;
+	height: 30px;
+	font-family: "kn";
+	font-size: 13pt;
+	background: #fff;
+	border: 2px solid #E0E0E0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#boardRetouchTable #retouch button:hover {
+	background: #C7C7C7;
+}
+#boardRetouchTable #delete{
+	height: 60px;
+}
+#boardRetouchTable #delete button{
+	width: 150px;
+	height: 30px;
+	font-family: "kn";
+	font-size: 13pt;
+	background: #fff;
+	border: 2px solid #E0E0E0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#boardRetouchTable #delete button:hover {
+	background: #C7C7C7;
+}

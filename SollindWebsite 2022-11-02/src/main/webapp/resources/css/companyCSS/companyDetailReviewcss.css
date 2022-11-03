@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@font-face{
+	font-family: "ma";
+	src: url("../font/Maplestory Light.ttf");
+}
+
+#companyDetailTableArea{
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 150px;
+	width: 1200px;
+	
+}
+#companyNameTable{
+	width: 800px;
+	height: 100px;
+}
+
+.companyNameTableLogoTd{
+	width:20%;
+	height: 130px;
+	background-color: #FFFFFF;
+	padding: 5px;
+	border: #E51B20 solid 2px;
+	border-radius: 8px;
+}
+.companyNameTableTd1{
+	background-color: transparent;
+	font-size: 20pt;
+	font-weight: 900;
+	padding-left: 20px;
+}
+
+.companyNameTableTd2{
+	background-color: transparent;
+	font-size: 12pt;
+	color: #aaaaaa;
+	padding-left: 20px;
+}
+#companyMenuTable{
+	width: 100%;
+	margin-top: 30px;
+}
+.companyMenuTableTd{
+	font-size: 15pt;
+	border-bottom: black solid 1px;
+	padding-bottom: 10px;
+}
+.companyMenuTableTd:hover{
+	cursor: pointer;
+}
+.info{
+	width: 34%;
+}
+.review{
+	width: 33%;
+	font-weight:900;
+	border-bottom: #E51B20 solid 5px;
+}
+.board{
+	width: 33%;
+}
+#companyDetailTable{
+	width: 800px;
+	height: 300px;
+	background-color: #FFFFFF;
+	border: #E51B20 solid 3px;
+	padding: 20px;
+	border-radius: 8px;
+}
+.companyDetailIndex{
+	width : 80px;
+	color: #aaaaaa;
+}
+#companyTitle {
+	font-size: 25pt;
+	font-weight: 900;
+}
+#companyShowReviewTableArea{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.companyShowReviewTable{
+	width: 800px;
+}
+.companyShowReviewTable .goWriteReviewATd{
+	font-size: 15pt;
+	font-weight: 900;
+}
+.companyShowReviewTable .goWriteReviewATd a{
+	border: #E51B20 solid 3px;
+	background-color: white;
+	color: #E51B20;
+	padding: 5px;
+	border-radius: 8px;
+}
+.companyShowReviewTable .goWriteReviewATd a:hover{
+	border: #E51B20 solid 3px;
+	background-color: #E51B20;
+	color: white;
+}
+#companyShowReview{
+	width: 800px;
+	max-height: 300px;
+	background-color: #FFFFFF;
+	border: #E51B20 solid 2px;
+	border-radius: 8px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: ma;
+}
+.box{
+	width:600px;
+}
+.companyShowReviewTitle{
+	padding-top:15px;
+	padding-bottom:10px;
+	font-size: 20pt;
+	font-weight: 900;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.companyShowReviewText{
+	font-size: 12pt;
+	margin-top: 10px;
+}
+.companyShowReviewDelete button {
+	width: 50px;
+	height: 30px;
+	color: #E51B20;
+	border: #E51B20 solid 2px;
+	border-radius: 8px;
+	outline: none;
+	background-color: white;
+	font-family: ma;
+	font-size: 12pt;
+}
+.companyShowReviewDelete button:hover{
+	background-color: #E51B20;
+	color: white;
+	cursor: pointer;
+}

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@font-face{
+	font-family: "kn";
+	src: url("KoPubWorld Dotum Bold.ttf");
+}
+@font-face{
+	font-family: "maple";
+	src: url("font/Maplestory Light.ttf");
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+tr{
+	padding: 0px;
+	margin: 0px;
+}
+td{
+	padding: 0px;
+	margin: 0px;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: #212121;
+}
+#homeTable {
+	width: 100%;
+	font-family: "kn";
+	text-align: center;
+	border-spacing: 0;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+}
+#homeTable #tableTitle{
+	height: 80px;
+	background-color: white;
+	border-bottom: 2px solid #E0E0E0;
+}
+#homeTable #tableTitle #main {
+	width: 1200px;
+	height: 70px;
+	border-spacing: 0;
+	font-family: "kn";
+	font-size: 16pt;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+#homeTable #tableTitle #main #companyName{
+	font-family: "maple";
+	width: 250px;
+	border-spacing: 0;
+	font-size: 30pt;
+	font-weight: 900;
+	text-align: left;
+}
+#homeTable #tableTitle #main #companyName img{
+	max-width: 18%;
+}
+#endInfo {
+	width: 100%;
+	font-family: "kn";
+	text-align: center;
+	border-spacing: 0;
+}
+#endInfo #endTable{
+	height: 80px;
+	border-top: 2px solid #E0E0E0;
+	background-color: black;
+}
+#endInfo #endTable #main {
+	width: 1200px;
+	height: 70px;
+	border-spacing: 0;
+	font-family: "kn";
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	color: #EDEDED;
+}
+#endInfo #endTable #main #infoImg{
+	width: 30%;
+}
+#endInfo #endTable #main #infoName{
+	max-width: 80%;
+}
+#endInfo #endTable #main .info{
+	font-size: 12pt;
+}
+#homeTable #tableTitle #loginTable{
+	padding-right: 3px;
+}
+#homeTable #tableTitle #loginTable #homeLogin {
+	font-family: "kn";
+	width: 75px;
+	height: 40px;
+	text-decoration: none;
+	font-size: 13pt;
+	padding: 8px;
+	position: relative;
+	margin-left: 0px;
+	border : 2px solid #FFFFFF;
+	color: #FFFFFF;
+	background-color: #DA3238;
+}
+#homeTable #tableTitle #loginTable #homeJoin {
+	font-family: "kn";
+	border : 2px solid #EEEEEE;
+	background-color: transparent;
+	width: 75px;
+	height: 40px;
+	text-decoration: none;
+	font-size: 13pt;
+	padding: 8px;
+	position: relative;
+	margin-left: -30px;
+}
+#homeTable #tableTitle #loginTable .homeLogined{
+	font-family: "kn";
+	border : 2px solid #EEEEEE;
+	background-color: transparent;
+	width: 75px;
+	height: 40px;
+	text-decoration: none;
+	font-size: 13pt;
+	padding: 8px;
+	position: relative;
+	margin-right: -30px;
+}
+#loginTable #homeGoWrite{
+	color: #FFFFFF;
+	background-color: #DA3238;
+	font-size: 13pt;
+	padding: 8px;
+	margin-right: 20px;
+}
+#backgroundTb{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	right: -1000%;
+	position: fixed;
+	
+}
+#loginTb{
+	position:fixed;
+	right:-1000px;
+	background-color: white;
+	max-width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0, 6px 6px rgba(0,0,0,0.23);
+	border: solid 3px black;
+	padding-top: 30px;
+}
+#loginText{
+	font-family: "kn";
+	font-size: 20pt;
+	font-weight: 3px;
+}
